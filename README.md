@@ -28,58 +28,60 @@ An app that displays information about different games, and other relevant infor
 
 **Required Must-have Stories**
 
-[ ] User will be able to see a list of games in a landing page
-[ ] User will be able to click on a game to display a detailed view about that game
-[ ] General news about the game industry will be displayed
-[ ] User can pick what genre of games (Like Steam tags)
-[ ] Will be directed to Steam page to purchase games if they want
+- [ ] User will be able to see a list of games in a landing page
+- [ ] User will be able to click on a game to display a detailed view about that game
+- [ ] General news about the game industry will be displayed
+- [ ] User can pick what genre of games (Like Steam tags)
+- [ ] Will be directed to Steam page to purchase games if they want
 
 **Optional Nice-to-have Stories**
 
-[ ] User will be able to optionally log in to keep track of games they want
-[ ] A like or track feature to keep track of games that they are interested in
-[ ] A randomize button to view random games within the database
-[ ] Profile page to change preferences and location of games
-[ ] Clean and pleasing UI
-[ ] Storing game information into local storage to be able to be used offline
+- [ ] User will be able to optionally log in to keep track of games they want
+- [ ] A like or track feature to keep track of games that they are interested in
+- [ ] A randomize button to view random games within the database
+- [ ] Profile page to change preferences and location of games
+- [ ] Clean and pleasing UI
+- [ ] Storing game information into local storage to be able to be used offline
 
 ### 2. Screen Archetypes
 
-[ ] Landing Page - Displays current popular games
-   [ ] Upon opening the app, the user will be able to see the most popular current games
-   [ ] Each game will be clickable and bring the user to a detailed view of the game that was clicked
-[ ] News Page - Pages that displays news about the gaming industry
-   [ ] Lets the user see current events in the gaming industry
-   [ ] Separated into sections, such as Esports, Releases, etc.
-[ ] Profile Page
-   [ ] user is prompted to log in to access and change their profile information
-   [ ] Lets the user upload a picture
-   [ ] Lets the user edit display information such as genre, age group, etc.
-[ ] Game Page - Displays detailed information about the game
-   [ ] Relevant game infomation will be displayed, such as rating, age group, genre, and other information
-   [ ] Will be linked to a steam page of the game to purchase
+- [ ] Landing Page - Displays current popular games
+- [ ] Upon opening the app, the user will be able to see the most popular current games
+- [ ] Each game will be clickable and bring the user to a detailed view of the game that was clicked
+- [ ] News Page - Pages that displays news about the gaming industry
+- [ ] Lets the user see current events in the gaming industry
+- [ ] Separated into sections, such as Esports, Releases, etc.
+- [ ] Profile Page
+- [ ] user is prompted to log in to access and change their profile information
+- [ ] Lets the user upload a picture
+- [ ] Lets the user edit display information such as genre, age group, etc.
+- [ ] Game Page - Displays detailed information about the game
+- [ ] Relevant game infomation will be displayed, such as rating, age group, genre, and other information
+- [ ] Will be linked to a steam page of the game to purchase
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-[ ] Landing Page
-[ ] News
-[ ] Profile
+- [ ] Landing Page
+- [ ] News
+- [ ] Profile
 
 Optional:
-[ ] Search
+- [ ] Search
 
 **Flow Navigation** (Screen to Screen)
 
-[ ] Landing page -> Game page
-[ ] Profile page -> Login/Signup page
-[ ] Game page -> external site
+- [ ] Landing page -> Game page
+- [ ] Profile page -> Login/Signup page
+- [ ] Game page -> external site
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="https://www.figma.com/proto/HwlU6OWafXklSKjY08LZVg/Untitled?node-id=2%3A24&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A24" width=600>
+Here's a walkthrough of implemented of our low fidelty design:
 
+<img src="walkthrough.gif" width=450><br>
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ### [BONUS] Digital Wireframes & Mockups
 
 ### [BONUS] Interactive Prototype
