@@ -87,9 +87,28 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+
+#### Brew (Needs to be rephrased)
+
+| Property | Type | Description |
+|--- | --- | --- |
+|?         |     |              |
+|?         |     |              |
+|?         |     |              |
+
+#### User
+
+| Property | Type | Description |
+|--- | --- | --- |
+|?         |     |              |
+|?         |     |              |
+|?         |     |              |
+|?         |     |              |
+|?         |     |              |
+
+
+
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
