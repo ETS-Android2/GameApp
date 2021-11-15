@@ -89,13 +89,19 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Schema 
 ### Models
 
-#### Brew (Needs to be rephrased)
+#### Game
 
-| Property | Type | Description |
-|--- | --- | --- |
-|?         |     |              |
-|?         |     |              |
-|?         |     |              |
+| Property | Type | Description          |
+|--- | --- | ---  |
+|objectID   |Number  |ID of the game in IGDB |
+|genre      |String  |Genre of the game      |
+|title      |String  |Title of the game      |
+|age        |Number  |PEGI/ESRB rating       |
+|rating     |Number  |Rating of the game     |
+|description|String  |Description of the game|
+|releaseDate|DateTime|Release date of game   |
+|tags       |List    |list of tags of game   |
+|developer  |String  |Develpoer of the game  |
 
 #### User
 
