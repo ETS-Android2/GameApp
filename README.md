@@ -126,7 +126,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
   .header("Client-ID", "Client ID")
   .header("Authorization", "Bearer access_token")
   .header("Accept", "application/json")
-  .body("fields name,category,age_ratings,involved_companies,genres,checksum,content_descriptions,rating,first_release_date,cover,synopsis,dlcs,popularity;sort rating desc;where rating != null;limit 20;")
+  .body(fields name,category,age_ratings,involved_companies,genres,checksum,rating,first_release_date,cover,summary,dlcs,artworks;sort rating desc; where rating <100; limit 20;)
   .asJson();
   ```
   -(Create/POST) Create a new like on a game
