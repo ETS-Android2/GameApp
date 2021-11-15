@@ -101,21 +101,33 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 |description|String  |Description of the game|
 |releaseDate|DateTime|Release date of game   |
 |tags       |List    |list of tags of game   |
-|developer  |String  |Develpoer of the game  |
+|developer  |String  |Developer of the game  |
+|image      |File    |Cover of the game      |
+
 
 #### User
 
 | Property | Type | Description |
 |--- | --- | --- |
-|?         |     |              |
-|?         |     |              |
-|?         |     |              |
-|?         |     |              |
-|?         |     |              |
+|username  |String  |unique name of user         |
+|profile   |File    |profile image               |
+|tags      |List    |liked tags to filter results|
+|bio       |String  |Short decription about them |
+|liked     |List    |List of liked games         |
 
 
 
 ### Networking
-- [Add list of network requests by screen ]
+#### List of network requests by screen
+- **Home Feed Screen**
+  -(Create/POST) Query list of popular games from IGDB
+  ```
+  HttpResponse<JsonNode> jsonResponse = Unirest.post("https://api.igdb.com/v4/games")
+  .header("Client-ID", "Client ID")
+  .header("Authorization", "Bearer access_token")
+  .header("Accept", "application/json")
+  .body("fields name,category,age_ratings,involved_companies,genres,checksum,content_descriptions,rating,first_release_date,cover,synopsis,dlcs,popularity;sort popularity desc;")
+  .asJson();
+  ```
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
