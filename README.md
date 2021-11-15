@@ -126,8 +126,17 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
   .header("Client-ID", "Client ID")
   .header("Authorization", "Bearer access_token")
   .header("Accept", "application/json")
-  .body("fields name,category,age_ratings,involved_companies,genres,checksum,content_descriptions,rating,first_release_date,cover,synopsis,dlcs,popularity;sort popularity desc;")
+  .body("fields name,category,age_ratings,involved_companies,genres,checksum,content_descriptions,rating,first_release_date,cover,synopsis,dlcs,popularity;sort rating desc;where rating != null;limit 20;")
   .asJson();
   ```
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+  -(Create/POST) Create a new like on a game
+  -(Delete existing like)
+- **Profile Screen**
+  - (Update/PUT) Update user profile image
+  - (Read/GET) Query logged in user object
+  - (Create/POST) Create new description
+- **News Screen**
+  - (Read/GET) get news stories from IGDB API
+### Existing API Endpoints
+- Game data - https://api.igdb.com/v4/games
+- Genre data - https://api.igdb.com/v4/genres
