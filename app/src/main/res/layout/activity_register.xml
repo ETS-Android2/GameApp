@@ -22,22 +22,24 @@
         android:hint="Password"
         android:inputType="textPassword" />
 
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Login"></Button>
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/btnLoginToRegister"
+        android:id="@+id/btnRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Register?"></Button>
+        android:text="Register User" />
 
     <TextView
-        android:id="@+id/tvLoginStatus"
+        android:id="@+id/tvRegistrationStatus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"

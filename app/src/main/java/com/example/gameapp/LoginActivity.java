@@ -22,6 +22,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText etUsername;
     private EditText etPassword;
     private Button btnLogin;
+    private Button btnLoginToRegister;
     private TextView tvLoginStatus;
 
     @Override
@@ -36,6 +37,7 @@ public class LoginActivity extends AppCompatActivity {
         etUsername = findViewById(R.id.etUsername);
         etPassword = findViewById(R.id.etPassword);
         btnLogin = findViewById(R.id.btnLogin);
+        btnLoginToRegister = findViewById(R.id.btnLoginToRegister);
         tvLoginStatus = findViewById(R.id.tvLoginStatus);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -48,12 +50,20 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        btnLoginToRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.i(TAG, "btnLoginToRegister: Register Button");
+                goRegisterActivity();
+            }
+        });
+
         tvLoginStatus.setVisibility(View.GONE);
 
 
     }
 
-    private void loginUser(String username, String password) {
+    void loginUser(String username, String password) {
         Log.i(TAG, String.format("loginUser: attempting login with %s", username));
         tvLoginStatus.setVisibility(View.GONE);
 
@@ -67,7 +77,7 @@ public class LoginActivity extends AppCompatActivity {
                     Log.e(TAG, "loginUser: Issue with login", e);
                     return;
                 }
-
+                tvLoginStatus.setVisibility(View.GONE);
                 goMainActivity();
                 Toast.makeText(LoginActivity.this, "Login Success!", Toast.LENGTH_SHORT).show();
                 Log.i(TAG, String.format("loginUser: login success with %s", username));
@@ -77,6 +87,12 @@ public class LoginActivity extends AppCompatActivity {
 
     private void goMainActivity() {
         Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
+        finish();
+    }
+
+    private void goRegisterActivity() {
+        Intent i = new Intent(this, RegisterActivity.class);
         startActivity(i);
         finish();
     }
