@@ -1,4 +1,4 @@
-package com.example.gameapp;
+package com.example.gameapp.model;
 
 import com.parse.ParseClassName;
 import com.parse.ParseObject;

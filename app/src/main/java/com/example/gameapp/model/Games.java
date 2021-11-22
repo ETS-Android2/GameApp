@@ -1,4 +1,4 @@
-package com.example.gameapp;
+package com.example.gameapp.model;
 
 import java.util.ArrayList;
 
