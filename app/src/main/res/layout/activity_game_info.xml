@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".GameInfoActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tvGameTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        tools:text="This is a test game title" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/tvGameGenres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+
+            tools:text="Genre1, Genre2, Genre3"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tvGameRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="8.8/10"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvGameSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc vel risus commodo viverra maecenas. Hendrerit dolor magna eget est lorem ipsum dolor sit. Nunc aliquet bibendum enim facilisis. Massa tempor nec feugiat nisl pretium fusce. Scelerisque viverra mauris in aliquam. Turpis egestas sed tempus urna et pharetra pharetra massa. Consectetur adipiscing elit ut aliquam purus sit amet luctus venenatis. Neque laoreet suspendisse interdum consectetur. Neque volutpat ac tincidunt vitae semper quis lectus. Ipsum suspendisse ultrices gravida dictum. Nibh ipsum consequat nisl vel pretium lectus. Nisi quis eleifend quam adipiscing vitae proin sagittis nisl. Rhoncus urna neque viverra justo nec ultrices dui sapien. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Integer feugiat scelerisque varius morbi enim nunc faucibus. Eget gravida cum sociis natoque penatibus et. Lorem ipsum dolor sit amet consectetur adipiscing."
+        />
+
+</LinearLayout>

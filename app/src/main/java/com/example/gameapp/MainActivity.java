@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 //        JSONArray datas = null;
 //        try {
-//            datas = ParseData.getJsonFromAssets(getApplicationContext(), "Games.JSON");
+//            datas = ParseData.getJsonFromAssets(getApplicationContext(), "app/src/main/java/com/example/gameapp/data/Games.JSON");
 //            Log.i("data", datas.getJSONObject(0).getString("name"));
 //        } catch (JSONException e) {
 //            e.printStackTrace();
