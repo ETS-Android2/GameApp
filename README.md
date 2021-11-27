@@ -29,7 +29,7 @@ An app that displays information about different games, and other relevant infor
 **Required Must-have Stories**
 
 - [x] User can log in of their account
-- [ ] User can log out of their account
+- [x] User can log out of their account
 - [ ] User will be able to see a list of games in a landing page
 - [ ] User will be able to click on a game to display a detailed view about that game
 - [ ] General news about the game industry will be displayed
