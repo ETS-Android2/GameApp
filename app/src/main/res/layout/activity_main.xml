@@ -17,9 +17,16 @@
             android:id="@+id/btnLogout"
             android:text="@string/logout"
             />
+
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvTopics"
+            android:id="@+id/rvGameList"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="8dp" />
+
+            />
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/rvTopics"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:padding="8dp" />-->
 </LinearLayout>

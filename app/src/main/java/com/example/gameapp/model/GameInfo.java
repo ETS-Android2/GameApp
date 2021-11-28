@@ -20,6 +20,11 @@ public class GameInfo {
         title = name;
     }
 
+    public GameInfo(String title, String summary) {
+        this.title = title;
+        this.summary = summary;
+    }
+
     public void setTitle(String name) {
         title = name;
     }
