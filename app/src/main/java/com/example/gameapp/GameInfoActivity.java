@@ -40,7 +40,7 @@ public class GameInfoActivity extends AppCompatActivity {
             genres.append(new Genre().getName(genre));
             genres.append(", ");
         }
-        genres.delete(genres.length()-2, genres.length()); // strip final comma
+//        genres.delete(genres.length()-2, genres.length()); // strip final comma
         tvGameGenres.setText(genres.toString());
     }
 }
