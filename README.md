@@ -28,6 +28,8 @@ An app that displays information about different games, and other relevant infor
 
 **Required Must-have Stories**
 
+- [x] User can log in of their account
+- [x] User can log out of their account
 - [ ] User will be able to see a list of games in a landing page
 - [ ] User will be able to click on a game to display a detailed view about that game
 - [ ] General news about the game industry will be displayed
@@ -41,7 +43,7 @@ An app that displays information about different games, and other relevant infor
 - [ ] A randomize button to view random games within the database
 - [ ] Profile page to change preferences and location of games
 - [ ] Clean and pleasing UI
-- [ ] Storing game information into local storage to be able to be used offline
+- [x] Storing game information into local storage to be able to be used offline
 
 ### 2. Screen Archetypes
 
@@ -79,7 +81,7 @@ Optional:
 ## Wireframes
 Here's a walkthrough of implemented of our low fidelty design:
 
-<img src="walkthrough2.gif" width=450><br>
+<img src="walkthrough.gif" width=450><br>
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ### [BONUS] Digital Wireframes & Mockups

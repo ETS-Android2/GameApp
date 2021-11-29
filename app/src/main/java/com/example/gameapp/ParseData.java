@@ -14,7 +14,7 @@ import java.io.InputStream;
 public class ParseData extends Activity {
     public static JSONArray getJsonFromAssets(Context context, String fileName) throws JSONException {
         String jsonString;
-        fileName = "data/Games.JSON";
+//        fileName = "data/Games.JSON";
         try {
             InputStream is = context.getAssets().open(fileName);
 
