@@ -30,9 +30,8 @@ An app that displays information about different games, and other relevant infor
 
 - [x] User can log in of their account
 - [x] User can log out of their account
-- [ ] User will be able to see a list of games in a landing page
-- [ ] User will be able to click on a game to display a detailed view about that game
-- [ ] General news about the game industry will be displayed
+- [x] User will be able to see a list of games in a landing page
+- [x] User will be able to click on a game to display a detailed view about that game
 - [ ] User can pick what genre of games (Like Steam tags)
 - [ ] Will be directed to Steam page to purchase games if they want
 
