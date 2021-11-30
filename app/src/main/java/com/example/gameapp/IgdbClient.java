@@ -2,15 +2,11 @@ package com.example.gameapp;
 
 import android.util.Log;
 
-import java.util.List;
-
 import kong.unirest.HttpResponse;
 import kong.unirest.JsonNode;
 import kong.unirest.Unirest;
 import kong.unirest.json.JSONArray;
 import kong.unirest.json.JSONObject;
-import proto.Game;
-import proto.GameResult;
 
 public class IgdbClient{
 
@@ -22,7 +18,7 @@ public class IgdbClient{
 
     }
 
-    public static JSONArray getGame() {
+    public JSONArray getGamesInfo() {
         HttpResponse<JsonNode> jsonResponse = Unirest.post("https://api.igdb.com/v4/games")
                 .header("Client-ID", "c3vyvocsr3oyvgbip5bm3tp0mchc2w")
                 .header("Authorization", "Bearer yspmr9vt4n8zo5ujij40yq9dn22tuh")
@@ -43,7 +39,7 @@ public class IgdbClient{
 
 
     }
-    public static String getCovers(int cover) {
+    public String getCovers(int cover) {
         int id = cover;
         HttpResponse<JsonNode> jsonResponse = Unirest.post("https://api.igdb.com/v4/covers")
                 .header("Client-ID", "c3vyvocsr3oyvgbip5bm3tp0mchc2w")
