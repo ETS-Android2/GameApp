@@ -80,8 +80,11 @@ Optional:
 
 ## Wireframes
 Here's a walkthrough of implemented of our low fidelty design:
-
+sprint1
 <img src="walkthrough.gif" width=450><br>
+
+completed sprint1
+<img src="walkthrough2.gif" width=450><br>
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ### [BONUS] Digital Wireframes & Mockups
