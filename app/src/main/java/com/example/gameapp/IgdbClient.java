@@ -2,21 +2,18 @@ package com.example.gameapp;
 
 import android.util.Log;
 
-import java.util.List;
-
 import kong.unirest.HttpResponse;
 import kong.unirest.JsonNode;
 import kong.unirest.Unirest;
 import kong.unirest.json.JSONArray;
 import kong.unirest.json.JSONObject;
-import proto.Game;
-import proto.GameResult;
 
 public class IgdbClient{
 
 
     public static final String REST_CONSUMER_KEY = "c3vyvocsr3oyvgbip5bm3tp0mchc2w";
     private static String accessToken = "Bearer jz5rzhd0u9hqj14hidasn7lvwip9r";
+    private JSONArray game;
 
     public IgdbClient() {
 
