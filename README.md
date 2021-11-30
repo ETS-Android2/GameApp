@@ -46,26 +46,22 @@ An app that displays information about different games, and other relevant infor
 
 ### 2. Screen Archetypes
 
-- [ ] Landing Page - Displays current popular games
-- [ ] Upon opening the app, the user will be able to see the most popular current games
-- [ ] Each game will be clickable and bring the user to a detailed view of the game that was clicked
-- [ ] News Page - Pages that displays news about the gaming industry
-- [ ] Lets the user see current events in the gaming industry
-- [ ] Separated into sections, such as Esports, Releases, etc.
+- [x] Landing Page - Displays current popular games
+- [x] Upon opening the app, the user will be able to see the most popular current games
+- [x] Each game will be clickable and bring the user to a detailed view of the game that was clicked .
 - [ ] Profile Page
 - [ ] user is prompted to log in to access and change their profile information
 - [ ] Lets the user upload a picture
 - [ ] Lets the user edit display information such as genre, age group, etc.
-- [ ] Game Page - Displays detailed information about the game
-- [ ] Relevant game infomation will be displayed, such as rating, age group, genre, and other information
+- [x] Game Page - Displays detailed information about the game
+- [ ] Relevant game information will be displayed, such as rating, age group, genre, and other information
 - [ ] Will be linked to a steam page of the game to purchase
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-- [ ] Landing Page
-- [ ] News
+- [x] Landing Page
 - [ ] Profile
 
 Optional:
