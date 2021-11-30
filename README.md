@@ -30,9 +30,8 @@ An app that displays information about different games, and other relevant infor
 
 - [x] User can log in of their account
 - [x] User can log out of their account
-- [ ] User will be able to see a list of games in a landing page
-- [ ] User will be able to click on a game to display a detailed view about that game
-- [ ] General news about the game industry will be displayed
+- [x] User will be able to see a list of games in a landing page
+- [x] User will be able to click on a game to display a detailed view about that game
 - [ ] User can pick what genre of games (Like Steam tags)
 - [ ] Will be directed to Steam page to purchase games if they want
 
@@ -47,26 +46,22 @@ An app that displays information about different games, and other relevant infor
 
 ### 2. Screen Archetypes
 
-- [ ] Landing Page - Displays current popular games
-- [ ] Upon opening the app, the user will be able to see the most popular current games
-- [ ] Each game will be clickable and bring the user to a detailed view of the game that was clicked
-- [ ] News Page - Pages that displays news about the gaming industry
-- [ ] Lets the user see current events in the gaming industry
-- [ ] Separated into sections, such as Esports, Releases, etc.
+- [x] Landing Page - Displays current popular games
+- [x] Upon opening the app, the user will be able to see the most popular current games
+- [x] Each game will be clickable and bring the user to a detailed view of the game that was clicked .
 - [ ] Profile Page
 - [ ] user is prompted to log in to access and change their profile information
 - [ ] Lets the user upload a picture
 - [ ] Lets the user edit display information such as genre, age group, etc.
-- [ ] Game Page - Displays detailed information about the game
-- [ ] Relevant game infomation will be displayed, such as rating, age group, genre, and other information
+- [x] Game Page - Displays detailed information about the game
+- [ ] Relevant game information will be displayed, such as rating, age group, genre, and other information
 - [ ] Will be linked to a steam page of the game to purchase
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-- [ ] Landing Page
-- [ ] News
+- [x] Landing Page
 - [ ] Profile
 
 Optional:
@@ -80,8 +75,11 @@ Optional:
 
 ## Wireframes
 Here's a walkthrough of implemented of our low fidelty design:
-
+sprint1
 <img src="walkthrough.gif" width=450><br>
+
+completed sprint1
+<img src="walkthrough3.gif" width=450><br>
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ### [BONUS] Digital Wireframes & Mockups
