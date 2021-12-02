@@ -76,21 +76,11 @@ public class MainActivity extends AppCompatActivity {
 
         rvGameList = findViewById(R.id.rvGameList);
 
-        List<GameInfo> gamess = new ArrayList<>();
-
-        // dummy game info
-        String[] titles = new String[] {
-                "Super Mario", "Legend of Zelda", "Metroid"
-        };
-        String[] summaries = new String[] {
-                "bing bing yahoo man", "this is a secret to everybody", "omg metroid is a girl?"
-        };
-        for (int i = 0; i < titles.length; i++) {
-            gamess.add(new GameInfo(titles[i], summaries[i]));
-        }
+        List<GameInfo> games = new ArrayList<>();
 
 
-        GameInfoAdapter gameInfoAdapter = new GameInfoAdapter(this, gamess);
+
+        GameInfoAdapter gameInfoAdapter = new GameInfoAdapter(this, games);
 
 //        String[] titles = new String[] {
 //                "Super Mario", "Legend of Zelda", "Metroid"
@@ -113,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        GameInfoAdapter gameInfoAdapter = new GameInfoAdapter(this, games);
+        //GameInfoAdapter gameInfoAdapter = new GameInfoAdapter(this, games);
         rvGameList.setAdapter(gameInfoAdapter);
         rvGameList.setLayoutManager(new LinearLayoutManager(this));
 
