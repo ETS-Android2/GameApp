@@ -12,6 +12,7 @@ public class GameInfo {
     int id = 0;
     ArrayList<Integer> genres = new ArrayList<Integer>();
     double rating = 0.0;
+    int pictureID = 0;
 
     // for Parcel
     public GameInfo() {}
@@ -20,13 +21,21 @@ public class GameInfo {
         title = name;
     }
 
-    public GameInfo(String title, String summary) {
+    public GameInfo(String title, String summary, double rating, int pictureID) {
         this.title = title;
         this.summary = summary;
+        //this.genres = genres;
+        this.rating = rating;
+        this.pictureID = pictureID;
+
     }
 
     public void setTitle(String name) {
         title = name;
+    }
+
+    public void setPictureURL(int pictureID) {
+        this.pictureID = pictureID;
     }
 
     public void setSummary(String summary) {
@@ -37,9 +46,7 @@ public class GameInfo {
         this.id = id;
     }
 
-    public void setGenres(ArrayList<Integer> genre) {
-        genres = genre;
-    }
+    public void setGenres(ArrayList<Integer> genre) { genres = genre; }
 
     public void setRating(double rating) {
         this.rating = rating;
@@ -47,6 +54,10 @@ public class GameInfo {
 
     public String getTitle() {
         return title;
+    }
+
+    public int getPictureID() {
+        return pictureID;
     }
 
     public String getSummary() {
@@ -57,9 +68,7 @@ public class GameInfo {
         return id;
     }
 
-    public ArrayList<Integer> getGenres() {
-        return genres;
-    }
+    public ArrayList<Integer> getGenres() { return genres; }
 
     public double getRating() {
         return rating;

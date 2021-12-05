@@ -3,6 +3,7 @@ package com.example.gameapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.StrictMode;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -46,14 +47,9 @@ public class MainActivity extends AppCompatActivity {
 
         //pass in the game ids from the JSONArray from the getGame function
         String coverUrl = gamesClient.getCovers(153700);
-        //Log.i("TWITCH", games.getGame().get(0));
-//        JSONArray datas = null;
-//        try {
-//            datas = ParseData.getJsonFromAssets(getApplicationContext(), "app/src/main/java/com/example/gameapp/data/Games.JSON");
-//            Log.i("data", datas.getJSONObject(0).getString("name"));
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//        }
+        gamesClient.getSearch("Halo 3");
+        JSONArray gamesInfo2 = gamesClient.getGenreGame(2);
+
 
         btnLogout = findViewById(R.id.btnLogout);
         btnLogout.setOnClickListener(new View.OnClickListener() {
@@ -77,20 +73,20 @@ public class MainActivity extends AppCompatActivity {
         rvGameList = findViewById(R.id.rvGameList);
 
         List<GameInfo> games = new ArrayList<>();
+        ArrayList<Integer> genre = new ArrayList<>();
         for (int i = 0; i < gamesInfo.length(); i++) {
             JSONObject game = (JSONObject)gamesInfo.get(i);
             try {
                 String title = game.getString("name");
                 String summary = game.getString("summary");
-                float rating = game.getFloat("rating") / 10;
                 JSONArray genres = game.getJSONArray("genres");
-
-                GameInfo gameInfo = new GameInfo(title, summary);
-                gameInfo.setRating(rating);
-                gameInfo.setGenres((ArrayList<Integer>) genres.toList());
-
-                games.add(gameInfo);
-
+                for(Object num :genres) {
+                    genre.add((Integer) num);
+                }
+                double rating = game.getDouble("rating");
+                int pictureID = game.getInt("id");
+                Log.i("covers", Integer.toString(pictureID));
+                games.add(new GameInfo(title, summary, rating, pictureID));
             } catch (JSONException e) {
                 e.printStackTrace();
             }
