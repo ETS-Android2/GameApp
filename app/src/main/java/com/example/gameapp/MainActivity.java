@@ -77,24 +77,20 @@ public class MainActivity extends AppCompatActivity {
         rvGameList = findViewById(R.id.rvGameList);
 
         List<GameInfo> games = new ArrayList<>();
-
-        // dummy game info
-//        String[] titles = new String[] {
-//                "Super Mario", "Legend of Zelda", "Metroid"
-//        };
-//        String[] summaries = new String[] {
-//                "bing bing yahoo man", "this is a secret to everybody", "omg metroid is a girl?"
-//        };
-//        for (int i = 0; i < titles.length; i++) {
-//            games.add(new GameInfo(titles[i], summaries[i]));
-//        }
         for (int i = 0; i < gamesInfo.length(); i++) {
             JSONObject game = (JSONObject)gamesInfo.get(i);
             try {
                 String title = game.getString("name");
                 String summary = game.getString("summary");
+                float rating = game.getFloat("rating") / 10;
+                JSONArray genres = game.getJSONArray("genres");
 
-                games.add(new GameInfo(title, summary));
+                GameInfo gameInfo = new GameInfo(title, summary);
+                gameInfo.setRating(rating);
+                gameInfo.setGenres((ArrayList<Integer>) genres.toList());
+
+                games.add(gameInfo);
+
             } catch (JSONException e) {
                 e.printStackTrace();
             }

@@ -33,7 +33,7 @@ public class GameInfoActivity extends AppCompatActivity {
 
         tvGameTitle.setText(gameInfo.getTitle());
         tvGameSummary.setText(gameInfo.getSummary());
-        tvGameRating.setText(String.format("%s/10", gameInfo.getRating()));
+        tvGameRating.setText(gameInfo.getRatingString());
         // genres?
         StringBuilder genres = new StringBuilder();
         for (int genre: gameInfo.getGenres()) {
