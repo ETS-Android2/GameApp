@@ -73,4 +73,8 @@ public class GameInfo {
     public double getRating() {
         return rating;
     }
+
+    public String getRatingString() {
+        return String.format("%.2f/10", this.getRating());
+    }
 }

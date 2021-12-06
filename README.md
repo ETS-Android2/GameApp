@@ -54,7 +54,7 @@ An app that displays information about different games, and other relevant infor
 - [ ] Lets the user upload a picture
 - [ ] Lets the user edit display information such as genre, age group, etc.
 - [x] Game Page - Displays detailed information about the game
-- [ ] Relevant game information will be displayed, such as rating, age group, genre, and other information
+- [x] Relevant game information will be displayed, such as rating, age group, genre, and other information
 - [ ] Will be linked to a steam page of the game to purchase
 
 ### 3. Navigation

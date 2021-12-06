@@ -57,10 +57,12 @@ public class GameInfoAdapter extends RecyclerView.Adapter<GameInfoAdapter.ViewHo
 
         LinearLayout container;
         TextView tvTitle;
+        TextView tvGameRating;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             tvTitle = itemView.findViewById(R.id.tvTitle);
+            tvGameRating = itemView.findViewById(R.id.tvGameRating);
             container = itemView.findViewById(R.id.llGameOverview);
         }
 
@@ -82,6 +84,8 @@ public class GameInfoAdapter extends RecyclerView.Adapter<GameInfoAdapter.ViewHo
 
         public void bind(GameInfo game) {
             tvTitle.setText(game.getTitle());
+            tvGameRating.setText(game.getRatingString());
+
             this.setOnClickListener(context, game);
         }
     }
