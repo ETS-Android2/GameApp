@@ -73,9 +73,10 @@ public class MainActivity extends AppCompatActivity {
         rvGameList = findViewById(R.id.rvGameList);
 
         List<GameInfo> games = new ArrayList<>();
-        ArrayList<Integer> genre = new ArrayList<>();
+
         for (int i = 0; i < gamesInfo.length(); i++) {
             JSONObject game = (JSONObject)gamesInfo.get(i);
+            ArrayList<Integer> genre = new ArrayList<>();
             try {
                 String title = game.getString("name");
                 String summary = game.getString("summary");
@@ -86,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                 double rating = game.getDouble("rating");
                 int pictureID = game.getInt("id");
                 Log.i("covers", Integer.toString(pictureID));
-                games.add(new GameInfo(title, summary, rating, pictureID));
+                games.add(new GameInfo(title, summary, rating, pictureID, genre));
             } catch (JSONException e) {
                 e.printStackTrace();
             }

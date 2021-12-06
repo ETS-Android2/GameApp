@@ -21,10 +21,10 @@ public class GameInfo {
         title = name;
     }
 
-    public GameInfo(String title, String summary, double rating, int pictureID) {
+    public GameInfo(String title, String summary, double rating, int pictureID, ArrayList<Integer> genres) {
         this.title = title;
         this.summary = summary;
-        //this.genres = genres;
+        this.genres = genres;
         this.rating = rating;
         this.pictureID = pictureID;
 

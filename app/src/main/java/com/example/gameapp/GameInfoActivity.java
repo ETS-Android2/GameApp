@@ -63,7 +63,7 @@ public class GameInfoActivity extends AppCompatActivity {
         // genres?
         StringBuilder genres = new StringBuilder();
         for (int genre: gameInfo.getGenres()) {
-            genres.append(new Genre().getName(genre));
+            genres.append(new Genre().getGenre(genre));
             genres.append(", ");
         }
 //        genres.delete(genres.length()-2, genres.length()); // strip final comma
