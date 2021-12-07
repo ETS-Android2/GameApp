@@ -15,10 +15,24 @@
 <!--        android:scaleType="centerCrop"-->
 <!--        tools:srcCompat="@tools:sample/avatars" />-->
 
-    <TextView
-        android:id="@+id/tvTitle"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        tools:text="Title of Game" />
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="0dp"
+            tools:text="Title of Game" />
+
+        <TextView
+            android:id="@+id/tvGameRating"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="9.55/10" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

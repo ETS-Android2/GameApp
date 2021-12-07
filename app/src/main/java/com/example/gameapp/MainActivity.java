@@ -3,6 +3,7 @@ package com.example.gameapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.StrictMode;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -46,14 +47,9 @@ public class MainActivity extends AppCompatActivity {
 
         //pass in the game ids from the JSONArray from the getGame function
         String coverUrl = gamesClient.getCovers(153700);
-        //Log.i("TWITCH", games.getGame().get(0));
-//        JSONArray datas = null;
-//        try {
-//            datas = ParseData.getJsonFromAssets(getApplicationContext(), "app/src/main/java/com/example/gameapp/data/Games.JSON");
-//            Log.i("data", datas.getJSONObject(0).getString("name"));
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//        }
+        gamesClient.getSearch("Halo 3");
+        JSONArray gamesInfo2 = gamesClient.getGenreGame(2);
+
 
         btnLogout = findViewById(R.id.btnLogout);
         btnLogout.setOnClickListener(new View.OnClickListener() {
@@ -78,32 +74,26 @@ public class MainActivity extends AppCompatActivity {
 
         List<GameInfo> games = new ArrayList<>();
 
-
-
-        GameInfoAdapter gameInfoAdapter = new GameInfoAdapter(this, games);
-
-//        String[] titles = new String[] {
-//                "Super Mario", "Legend of Zelda", "Metroid"
-//        };
-//        String[] summaries = new String[] {
-//                "bing bing yahoo man", "this is a secret to everybody", "omg metroid is a girl?"
-//        };
-//        for (int i = 0; i < titles.length; i++) {
-//            games.add(new GameInfo(titles[i], summaries[i]));
-//        }
         for (int i = 0; i < gamesInfo.length(); i++) {
             JSONObject game = (JSONObject)gamesInfo.get(i);
+            ArrayList<Integer> genre = new ArrayList<>();
             try {
                 String title = game.getString("name");
                 String summary = game.getString("summary");
-
-                games.add(new GameInfo(title, summary));
+                JSONArray genres = game.getJSONArray("genres");
+                for(Object num :genres) {
+                    genre.add((Integer) num);
+                }
+                double rating = game.getDouble("rating");
+                int pictureID = game.getInt("id");
+                Log.i("covers", Integer.toString(pictureID));
+                games.add(new GameInfo(title, summary, rating, pictureID, genre));
             } catch (JSONException e) {
                 e.printStackTrace();
             }
         }
 
-        //GameInfoAdapter gameInfoAdapter = new GameInfoAdapter(this, games);
+        GameInfoAdapter gameInfoAdapter = new GameInfoAdapter(this, games);
         rvGameList.setAdapter(gameInfoAdapter);
         rvGameList.setLayoutManager(new LinearLayoutManager(this));
 

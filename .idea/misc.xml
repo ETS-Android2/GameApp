@@ -3,12 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
+=======
+        <entry key="..\:/SW/CS388-001/GameApp/app/src/main/res/layout/activity_game_info.xml" value="0.5" />
+>>>>>>> 46eb33257ebeda10dc5845c0aa116d557a6aad15
         <entry key="..\:/SW/CS388-001/GameApp/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/SW/CS388-001/GameApp/app/src/main/res/layout/activity_main.xml" value="0.5541666666666667" />
         <entry key="..\:/SW/CS388-001/GameApp/app/src/main/res/layout/activity_register.xml" value="0.3171875" />
         <entry key="..\:/SW/CS388-001/GameApp/app/src/main/res/layout/game.xml" value="0.39814814814814814" />
         <entry key="..\:/SW/CS388-001/GameApp/app/src/main/res/layout/gamelist.xml" value="0.39814814814814814" />
         <entry key="..\:/SW/CS388-001/GameApp/app/src/main/res/layout/login.xml" value="0.5" />
+        <entry key="..\:/Users/AlbertWang/AndroidStudioProjects/GameApp2/app/src/main/res/layout/activity_game_info.xml" value="0.33" />
         <entry key="..\:/Users/AlbertWang/AndroidStudioProjects/GameApp2/app/src/main/res/layout/activity_main.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/AlbertWang/AndroidStudioProjects/GameApp2/app/src/main/res/layout/game.xml" value="0.2" />
         <entry key="..\:/Users/AlbertWang/AndroidStudioProjects/GameApp2/app/src/main/res/layout/gamelist.xml" value="0.38697916666666665" />

@@ -41,12 +41,27 @@
             tools:ignore="MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <ImageView
+        android:id="@+id/ivImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
     <TextView
         android:id="@+id/tvGameSummary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="4dp"
-        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc vel risus commodo viverra maecenas. Hendrerit dolor magna eget est lorem ipsum dolor sit. Nunc aliquet bibendum enim facilisis. Massa tempor nec feugiat nisl pretium fusce. Scelerisque viverra mauris in aliquam. Turpis egestas sed tempus urna et pharetra pharetra massa. Consectetur adipiscing elit ut aliquam purus sit amet luctus venenatis. Neque laoreet suspendisse interdum consectetur. Neque volutpat ac tincidunt vitae semper quis lectus. Ipsum suspendisse ultrices gravida dictum. Nibh ipsum consequat nisl vel pretium lectus. Nisi quis eleifend quam adipiscing vitae proin sagittis nisl. Rhoncus urna neque viverra justo nec ultrices dui sapien. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Integer feugiat scelerisque varius morbi enim nunc faucibus. Eget gravida cum sociis natoque penatibus et. Lorem ipsum dolor sit amet consectetur adipiscing."
-        />
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc vel risus commodo viverra maecenas. Hendrerit dolor magna eget est lorem ipsum dolor sit. Nunc aliquet bibendum enim facilisis. Massa tempor nec feugiat nisl pretium fusce. Scelerisque viverra mauris in aliquam. Turpis egestas sed tempus urna et pharetra pharetra massa. Consectetur adipiscing elit ut aliquam purus sit amet luctus venenatis. Neque laoreet suspendisse interdum consectetur. Neque volutpat ac tincidunt vitae semper quis lectus. Ipsum suspendisse ultrices gravida dictum. Nibh ipsum consequat nisl vel pretium lectus. Nisi quis eleifend quam adipiscing vitae proin sagittis nisl. Rhoncus urna neque viverra justo nec ultrices dui sapien. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Integer feugiat scelerisque varius morbi enim nunc faucibus. Eget gravida cum sociis natoque penatibus et. Lorem ipsum dolor sit amet consectetur adipiscing." />
+
+    <TextView
+        android:id="@+id/tvWebsites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:linksClickable="true"
+        android:text="TextView" />
 
 </LinearLayout>
