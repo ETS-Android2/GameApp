@@ -8,12 +8,12 @@
     android:id="@+id/llGameOverview"
     >
 
-<!--    <ImageView-->
-<!--        android:id="@+id/ivCover"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="300dp"-->
-<!--        android:scaleType="centerCrop"-->
-<!--        tools:srcCompat="@tools:sample/avatars" />-->
+    <!--    <ImageView-->
+    <!--        android:id="@+id/ivCover"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="300dp"-->
+    <!--        android:scaleType="centerCrop"-->
+    <!--        tools:srcCompat="@tools:sample/avatars" />-->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -26,7 +26,8 @@
             android:layout_margin="5dp"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="0dp"
-            tools:text="Title of Game" />
+            tools:text="Title of Game"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/tvGameRating"
