@@ -4,16 +4,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.gameapp.adapters.GameInfoAdapter;
 import com.example.gameapp.model.GameInfo;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.parse.LogOutCallback;
 import com.parse.ParseException;
 import com.parse.ParseUser;
@@ -29,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btnLogout;
     private RecyclerView rvGameList;
+    private BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,15 +46,29 @@ public class MainActivity extends AppCompatActivity {
         //initialize and call external API
         IgdbClient gamesClient = new IgdbClient();
 
+        //bottom navigation view setup
+        bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.action_home:
+                        Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                        startActivity(intent);
+                        return true;
+                    case R.id.action_search:
+                        intent = new Intent(MainActivity.this, Search.class);
+                        startActivity(intent);
+                        return true;
+                    case R.id.action_logout:
+                        goLoginActivity();
+                        return true;
+                }
+                return false;
+            }
+        });
         //get the top rated games
         JSONArray gamesInfo = gamesClient.getGamesInfo();
-
-        //pass in the game ids from the JSONArray from the getGame function
-        String coverUrl = gamesClient.getCovers(153700);
-        gamesClient.getSearch("Halo 3");
-        JSONArray gamesInfo2 = gamesClient.getGenreGame(2);
-
-
         btnLogout = findViewById(R.id.btnLogout);
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
                         goLoginActivity();
                     }
                 });
-
             }
         });
 
