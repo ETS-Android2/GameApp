@@ -81,6 +81,8 @@ sprint1
 completed sprint1
 <img src="walkthrough3.gif" width=450><br>
 
+<img src="walkthrough4.gif" width=450><br>
+
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ### [BONUS] Digital Wireframes & Mockups
 
