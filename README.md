@@ -32,8 +32,8 @@ An app that displays information about different games, and other relevant infor
 - [x] User can log out of their account
 - [x] User will be able to see a list of games in a landing page
 - [x] User will be able to click on a game to display a detailed view about that game
-- [ ] User can pick what genre of games (Like Steam tags)
-- [ ] Will be directed to Steam page to purchase games if they want
+- [x] User can pick what genre of games (Like Steam tags)
+- [x] Will be directed to Steam page to purchase games if they want
 
 **Optional Nice-to-have Stories**
 
@@ -41,7 +41,7 @@ An app that displays information about different games, and other relevant infor
 - [ ] A like or track feature to keep track of games that they are interested in
 - [ ] A randomize button to view random games within the database
 - [ ] Profile page to change preferences and location of games
-- [ ] Clean and pleasing UI
+- [x] Clean and pleasing UI
 - [x] Storing game information into local storage to be able to be used offline
 
 ### 2. Screen Archetypes
@@ -69,19 +69,14 @@ Optional:
 
 **Flow Navigation** (Screen to Screen)
 
-- [ ] Landing page -> Game page
+- [x] Landing page -> Game page
 - [ ] Profile page -> Login/Signup page
 - [ ] Game page -> external site
 
 ## Wireframes
 Here's a walkthrough of implemented of our low fidelty design:
-sprint1
-<img src="walkthrough.gif" width=450><br>
 
-completed sprint1
-<img src="walkthrough3.gif" width=450><br>
-
-<img src="walkthrough4.gif" width=450><br>
+<img src="walkthrough5.gif" width=450><br>
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ### [BONUS] Digital Wireframes & Mockups
